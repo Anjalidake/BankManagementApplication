@@ -94,7 +94,7 @@ public class AccountController {
         return ResponseEntity.ok("Transfer successful");
     }
 
-    // CLOSE ACCOUNT (SOFT DELETE)
+    // CLOSE ACCOUNT 
     @DeleteMapping("/{accountNumber}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Void> closeAccount(
